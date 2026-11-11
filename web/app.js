@@ -654,8 +654,8 @@
     var m = function (href, i, t, s, fn) { return h(fn ? 'button' : 'a', fn ? { type: 'button', onclick: fn } : { href: href }, h('span', { class: 'ik' }, ikon(i)), h('b', { text: t }), h('small', { text: s })); };
     el.appendChild(h('div', { class: 'kartu profil-kartu', style: 'margin-bottom:14px' }, avatar(S.user.nama, S.user.nik, 'besar'), h('div', {}, h('b', { text: S.user.nama }), h('span', { class: 'muted', text: S.user.jabatan + ' · ' + S.user.dept + ' · NIK ' + S.user.nik }))));
     el.appendChild(h('div', { class: 'menu-lain' },
-      m('#/mutasi', 'buku', 'Mutasi saldo saya', 'Riwayat hak, pemakaian, koreksi'),
-      m('#/riwayat', 'jam', 'Riwayat pengajuan', 'Status semua pengajuan'),
+      // Menu yang sudah ada di nav bawah tidak diulang di sini. Approver tidak punya Mutasi di nav.
+      approver() ? m('#/mutasi', 'buku', 'Mutasi saldo saya', 'Riwayat hak, pemakaian, koreksi') : null,
       m('#/ganti-pin', 'kunci', 'Ganti PIN', 'PIN 6 angka untuk masuk'),
       m(null, 'keluar', 'Keluar', S.user.nama, function () { keluar(); })));
     var admin = [];
