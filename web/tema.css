@@ -1,0 +1,29 @@
+/* Brand Cuti Online. Ganti brand klien cukup ubah file ini.
+   Arah: kontraktor tambang. Ink navy gelap + amber safety dipakai hemat, abu dingin netral. */
+:root {
+  color-scheme: light;
+  --ink: #0d1a2e;          /* sidebar, hero, teks judul */
+  --ink-2: #172a47;
+  --ink-garis: rgba(255,255,255,.10);
+  --aksen: #f5a524;        /* amber safety: aksi utama, penanda aktif */
+  --aksen-tekan: #db8f12;
+  --aksen-teks: #1c1302;
+  --aksen-lembut: #fff4dc;
+  --latar: #f2f3f5;
+  --permukaan: #ffffff;
+  --permukaan-2: #f7f8fa;
+  --garis: #e3e6eb;
+  --teks: #121a26;
+  --teks-2: #5d6676;
+  --teks-3: #8a92a1;
+  --hijau: #0f7a45; --hijau-l: #e3f5ea;
+  --kuning: #9a5b00; --kuning-l: #fff1d6;
+  --merah: #b42318; --merah-l: #fde8e6;
+  --abu: #4b5565; --abu-l: #eceef2;
+  --biru: #1e4fb8; --biru-l: #e5edfc;
+  --r-s: 10px; --r-m: 14px; --r-l: 20px;
+  --bayang: 0 1px 2px rgba(13,26,46,.06), 0 4px 16px rgba(13,26,46,.06);
+  --f-judul: "Archivo", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --f-isi: "Plus Jakarta Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
